@@ -293,23 +293,15 @@
       gap: 64px;
       align-items: center;
     }
-    .sobre-foto-placeholder {
+    .sobre-foto {
       flex-shrink: 0;
-      width: 240px;
-      height: 300px;
+      width: 260px;
+      height: 340px;
       border-radius: 20px;
-      background: linear-gradient(145deg, var(--salvia) 0%, var(--floresta) 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      color: rgba(255,255,255,.6);
-      font-size: 14px;
-      text-align: center;
-      padding: 24px;
+      object-fit: cover;
+      object-position: center top;
+      box-shadow: 0 16px 48px rgba(45,74,48,.18);
     }
-    .sobre-foto-placeholder span { font-size: 48px; }
     .sobre-texto h2 {
       font-family: 'Playfair Display', serif;
       font-size: 34px;
@@ -410,7 +402,7 @@
       section { padding: 60px 0; }
       .hero { padding: 60px 0 56px; }
       .sobre-inner { flex-direction: column; gap: 36px; }
-      .sobre-foto-placeholder { width: 100%; height: 200px; flex-direction: row; }
+      .sobre-foto { width: 100%; height: 280px; }
       .nav-cta { display: none; }
       .cta-final { padding: 72px 0; }
     }
@@ -527,10 +519,7 @@
   <section class="sobre">
     <div class="container">
       <div class="sobre-inner">
-        <div class="sobre-foto-placeholder">
-          <span>🌱</span>
-          <p style="font-size:13px; color:rgba(255,255,255,.5)">Foto em breve</p>
-        </div>
+        <img src="foto.jpg" alt="Yamine Maciel — Psicóloga Clínica" class="sobre-foto">
         <div class="sobre-texto">
           <h2 class="serif">Yamine Maciel</h2>
           <p class="sobre-crp">Psicóloga Clínica · CRP 15/6485</p>
